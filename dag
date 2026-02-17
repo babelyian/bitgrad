@@ -1,0 +1,32 @@
+digraph {
+	graph [rankdir=LR]
+	4466290720 [label="{ data -0.9229 | grad 0.0311 }" shape=record]
+	"4466290720mul" [label=mul]
+	"4466290720mul" -> 4466290720
+	4466512976 [label="{ data -0.7121 | grad 0.0311 }" shape=record]
+	4468756048 [label="{ data -0.7849 | grad 0.0311 }" shape=record]
+	"4468756048mul" [label=mul]
+	"4468756048mul" -> 4468756048
+	4468335728 [label="{ data -0.9229 | grad 0.0311 }" shape=record]
+	4468336272 [label="{ data 0.3924 | grad -0.0623 }" shape=record]
+	4468753584 [label="{ data -1.6350 | grad 0.0311 }" shape=record]
+	"4468753584add" [label=add]
+	"4468753584add" -> 4468753584
+	4468669136 [label="{ data -2.4199 | grad 0.0311 }" shape=record]
+	"4468669136add" [label=add]
+	"4468669136add" -> 4468669136
+	4466237200 [label="{ data -0.9843 | grad 1.0000 }" shape=record]
+	"4466237200tanh" [label=tanh]
+	"4466237200tanh" -> 4466237200
+	4466516304 [label="{ data 1.0000 | grad -0.0287 }" shape=record]
+	4468623792 [label="{ data -2.0000 | grad 0.0122 }" shape=record]
+	4468623792 -> "4468756048mul"
+	4468335728 -> "4466290720mul"
+	4468669136 -> "4466237200tanh"
+	4466290720 -> "4468753584add"
+	4466516304 -> "4466290720mul"
+	4468753584 -> "4468669136add"
+	4468756048 -> "4468669136add"
+	4468336272 -> "4468756048mul"
+	4466512976 -> "4468753584add"
+}
