@@ -1,7 +1,7 @@
 
 # nanograd
 
-A small mimic of Autograd, PyTorch's automatic differentiation engine which implements backpropagation over a dynamically built DAG and a tiny neural networks library on top of it with a PyTorch-like API. the DAG only works over scalar values, e.g. we divide each neuron into all of its individual tiny adds and multiplies. But it's enough to build up entire deep neural nets doing binary classification, as the demo notebook shows.
+(following Karpathy's micrograd as a learning reference) A small mimic of Autograd, PyTorch's automatic differentiation engine which implements backpropagation over a dynamically built DAG and a tiny neural networks library on top of it with a PyTorch-like API. the DAG only works over scalar values, e.g. we divide each neuron into all of its individual tiny adds and multiplies. But it's enough to build up entire deep neural nets doing binary classification, as the demo notebook shows.
 
 ### Example usage
 
